@@ -1,8 +1,6 @@
 package rdm.qhacks.com.musicmatch.Activities;
 
 import android.support.v7.app.AppCompatActivity;
-
-import rdm.qhacks.com.musicmatch.View.GraphicsDisplayer;
 import rdm.qhacks.com.musicmatch.View.ParentView;
 
 
@@ -11,7 +9,6 @@ import rdm.qhacks.com.musicmatch.View.ParentView;
  */
 abstract public class BaseActivity extends AppCompatActivity {
 
-    protected GraphicsDisplayer gd;
     protected ParentView pv;
 
 }

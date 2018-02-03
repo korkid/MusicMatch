@@ -1,7 +1,9 @@
-package rdm.qhacks.com.musicmatch;
+package rdm.qhacks.com.musicmatch.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import rdm.qhacks.com.musicmatch.R;
 
 public class MusicMatch extends AppCompatActivity {
 

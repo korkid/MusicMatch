@@ -12,6 +12,7 @@ public class SongDO extends DataObject {
 
     public SongDO(String filePath){
         this.filePath = filePath;
+        this.songFile = new File(filePath);
 
     }
 }

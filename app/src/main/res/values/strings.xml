@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MusicMatch</string>
+    <string-array name="sample_list">
+        <item>Morphing Button - Icon</item>
+        <item>Morphing Button - Icon &amp; Text</item>
+        <item>Linear Progress Button - Determinate</item>
+        <item>Linear Progress Button - Indeterminate</item>
+    </string-array>
 </resources>

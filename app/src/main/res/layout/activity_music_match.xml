@@ -5,7 +5,6 @@
     android:id="@+id/MusicMatch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/MusicMatchLayout"
     tools:context="rdm.qhacks.com.musicmatch.Activities.MusicMatch">
 
 

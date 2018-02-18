@@ -29,7 +29,7 @@ public class MusicMatchView extends ParentView {
         //Set title attributes
         TextView title = this.viewGroup.findViewById(R.id.MusicMatchTitle);
         title.setText(this.context.getString(R.string.app_name));
-        title.setTextSize(TypedValue.COMPLEX_UNIT_PX, 100);
+        title.setTextSize(TypedValue.COMPLEX_UNIT_PX, 135);
 
         //Setup Recycler View
     }

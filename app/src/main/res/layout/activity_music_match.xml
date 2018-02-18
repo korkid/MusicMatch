@@ -9,11 +9,11 @@
 
     <TextView
         android:id="@+id/MusicMatchTitle"
-        android:layout_width="319dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="251dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,14 +29,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/FetchButton"
-        android:layout_width="75dp"
-        android:layout_height="46dp"
+        android:id="@+id/FileFetchButton"
+        android:layout_width="99dp"
+        android:layout_height="47dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/FetchButton"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
 </android.support.constraint.ConstraintLayout>

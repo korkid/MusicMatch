@@ -2,32 +2,41 @@ package rdm.qhacks.com.musicmatch.View;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
-import android.view.Display;
+import android.util.TypedValue;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
-import rdm.qhacks.com.musicmatch.Controllers.FetchMusicController;
 import rdm.qhacks.com.musicmatch.R;
 
 public class MusicMatchView extends ParentView {
 
-    FetchMusicController activityController;
+    private final String activityBackGroundColor = "#66ccff";
 
-    public MusicMatchView(ViewGroup viewGroup, Context context, Display display, FetchMusicController activityController){
-        this.gd = new GraphicsDisplayer(viewGroup, context, display);
-        this.activityController = activityController;
-        this.setupLayout();
+    public MusicMatchView(ViewGroup viewGroup, Context context){
+        this.viewGroup = viewGroup;
+        this.context = context;
     }
 
+    /**
+     * @Method setupLayout : Sets up the basic static UI that the MusicMatch activity will load
+     *                       Initialize and create the fragments
+     */
     @Override
-    protected void setupLayout() {
-        this.gd.getActivityLayout().setBackgroundColor(Color.parseColor("#66ccff"));
+    public void setupLayout() {
+        //Set background colour
+        this.viewGroup.setBackgroundColor(Color.parseColor(activityBackGroundColor));
 
-        ImageView fetchSimilarMusic = new ImageView(this.gd.getActivityContext());
-        this.gd.addTextToButton(fetchSimilarMusic, "Find me Music", 12, "OpenSans-Regular", "BLACK", R.drawable.background, 50,50, 0.5f,0.5f);
-        this.activityViews.put("FetchMusic", fetchSimilarMusic);
+        //Set title attributes
+        TextView title = this.viewGroup.findViewById(R.id.MusicMatchTitle);
+        title.setText(this.context.getString(R.string.app_name));
+        title.setTextSize(TypedValue.COMPLEX_UNIT_PX, 100);
 
-        fetchSimilarMusic.setOnClickListener(view -> Log.d("Data returned", activityController.sendFetchAndGetResponse(this.gd.getActivityContext())));
+        //Setup Recycler View
     }
+
+    public void accessFiles(){
+
+    }
+
+
 }

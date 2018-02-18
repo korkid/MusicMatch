@@ -1,17 +1,21 @@
 package rdm.qhacks.com.musicmatch.View;
 
-import android.view.View;
-
-import java.util.HashMap;
+import android.content.Context;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * This class is the parent class to all views in the app
  */
 public abstract class ParentView {
 
-    protected GraphicsDisplayer gd;
-    protected HashMap<String, View> activityViews = new HashMap<>();
-    abstract protected void setupLayout();
-    public HashMap<String, View> getAllActivityViews(){return activityViews;}
-    public View getView(String viewName){return activityViews.get(viewName);}
+    protected ViewGroup viewGroup;
+    protected Context context;
+
+    abstract public void setupLayout();
+
+    public <ViewObject extends TextView> void setTextViewText(ViewObject textView, String text){
+        textView.setText(text);
+    }
+
 }

@@ -11,4 +11,7 @@ abstract public class BaseActivity extends AppCompatActivity {
 
     protected ParentView pv;
 
+    abstract void setupView();
+    abstract void initializeController();
+
 }
